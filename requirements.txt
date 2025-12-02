@@ -1,0 +1,6 @@
+pymem
+customtkinter
+Pillow
+pyinstaller
+winshell
+pywin32
