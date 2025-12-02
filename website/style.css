@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #FFB800;
+    --bg-dark: #1a1a1a;
+    --bg-card: #2d2d2d;
+    --text-light: #ffffff;
+    --text-dim: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 50% 50%, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 184, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--text-dim);
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3d3d3d;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.features {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFB800, #FF9500);
+    color: #000;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 184, 0, 0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 184, 0, 0.5);
+}
+
+.subtext {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
